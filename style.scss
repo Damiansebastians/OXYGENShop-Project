@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:ital,wght@0,300;0,400;1,300&display=swap');
 
 
 * {
@@ -7,52 +7,94 @@
         padding: 0;
 }
 
-@media only screen and (min-width: 1000px) {
 
-}
 
 @media only screen and (min-width: 320px) {
 
-
     body {
         min-width: 320px;
+    }
 
             .header{
                 width: 100%;
                 height: 70px;
                 position: fixed;
                 top: 0px;
-                vertical-align: middle;
-                line-height: 70px;
                 background-color: white;
-                box-shadow: 0px 3px 6px black;
-            } 
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+            
+                .header-text{
+                    font-family: "raleway", sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 32px;
+                    line-height: 37px;
+                    color: #08a6e4;
+                    display: inline-block;
+                    margin: 16px 25px;
+                }
 
-            .header-text{
-                font-family: "raleway", sans-serif;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 32px;
-                line-height: 37px;
-                color: #08a6e4;
-                display: inline-block;
-                margin-left: 25px;
+                .header-button{
+                    position: absolute;
+                    right: 30px;
+                    top: 30px;
+                }
             }
 
-            .header-button{
-                right: 30px;
-            }
+// MAIN
+                .title {
+                    margin-top: 170px;
+                    text-align: center;
+                    color: #000000;
+
+                        .title-primary{
+                            font-family: "raleway", sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 35px;
+                            line-height: 41px;
+                        }
+
+                        .title-secondary{
+                            margin: 20px 30px 28px;
+                            font-family: "Open Sans", sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 23px;
+                        }
+
+                        .title-button{
+                            height: 67px;
+                            width: 90%;
+                            background: #08A6E4;
+                            border: #08A6E4;
+                            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+                            border-radius: 40px;
+                            cursor: pointer;
+
+                            & p{
+                                    font-family: "Open Sans", sans-serif;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                            }
+                        }
+                    }
+
+                    .background{
+                        width: 100%;
+                        height: 267px;
+                        background-image: url(./img/Background1_mobile.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin-top: 51px;
+                    }
+                }  
 
 
 
-
-
-
-
-    }
-
-
-
-}
 
 
