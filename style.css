@@ -72,7 +72,8 @@
   .background div {
     width: 100%;
     height: 267px;
-    background-image: url(./img/Background1_mobile.png);
+    background-image: url(./img/Background.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 51px;
@@ -105,5 +106,11 @@
     line-height: 20px;
     color: #A5A5A5;
     margin-bottom: 25px;
+  }
+  .article-first {
+    height: 370px;
+    border: 1px solid #E8E9ED;
+    margin: 42px 30px 0;
+    border-radius: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
