@@ -7,8 +7,6 @@
         padding: 0;
 }
 
-
-
 @media only screen and (min-width: 320px) {
 
     body {
@@ -43,6 +41,7 @@
             }
 
 // MAIN
+
                 .title {
                     margin-top: 170px;
                     text-align: center;
@@ -140,14 +139,14 @@
                         .first-img-1{
                             position: absolute;
                             top: 37px;
-                            right: 66px;
+                            right: 25%;
                             z-index:1 ;
                         }
 
                         .first-img-2{
                             position: absolute;
                             top: 15px;
-                            right: 65px;
+                            right: 25%;
                             border-radius: 41px;
                         }
 
@@ -183,6 +182,14 @@
                             line-height: 21px;
                             margin: 0 21px 30px;
                         }
+                    }
+
+                    .article-first-text{
+                        height: 100%;
+                        border: 1px solid #E8E9ED;
+                        margin: 42px 30px 0;
+                        border-radius: 5px;
+                        position: relative;
 
                         .brand-title{
                             margin: 31px 20px 20px;
@@ -191,10 +198,41 @@
                         .brand-text{
                             margin: 0px 20px 24px;
                         }
-                    }   
+
+                        h4{
+                            width: 80%;
+                            font-family: 'Raleway';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 30px;
+                            line-height: 35px;
+                            margin: 174px 94px 10px 22px;
+                        }
+
+                        p{
+                            font-family: "Open Sans", sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 21px;
+                            margin: 0 21px 30px;
+                        }
+                    }
+
+                    .article-trumpet{
+                        position: relative;
+                        margin: 0px 30px 100px;
+                        background-color:  #55DFB4;
+                        border-radius: 5px;
 
 
-
+                        .first-img-6{
+                            margin-top: 25px;
+                            width: 90%;
+                            max-width: 350px;
+                        }
+                    }
+                    
             }  
 
 

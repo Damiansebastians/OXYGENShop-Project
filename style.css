@@ -118,13 +118,13 @@
   .article-first .first-img-1 {
     position: absolute;
     top: 37px;
-    right: 66px;
+    right: 25%;
     z-index: 1;
   }
   .article-first .first-img-2 {
     position: absolute;
     top: 15px;
-    right: 65px;
+    right: 25%;
     border-radius: 41px;
   }
   .article-first .first-img-3 {
@@ -156,10 +156,45 @@
     line-height: 21px;
     margin: 0 21px 30px;
   }
-  .article-first .brand-title {
+  .article-first-text {
+    height: 100%;
+    border: 1px solid #E8E9ED;
+    margin: 42px 30px 0;
+    border-radius: 5px;
+    position: relative;
+  }
+  .article-first-text .brand-title {
     margin: 31px 20px 20px;
   }
-  .article-first .brand-text {
+  .article-first-text .brand-text {
     margin: 0px 20px 24px;
+  }
+  .article-first-text h4 {
+    width: 80%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 174px 94px 10px 22px;
+  }
+  .article-first-text p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 21px 30px;
+  }
+  .article-trumpet {
+    position: relative;
+    margin: 0px 30px 100px;
+    background-color: #55DFB4;
+    border-radius: 5px;
+  }
+  .article-trumpet .first-img-6 {
+    margin-top: 25px;
+    width: 90%;
+    max-width: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
