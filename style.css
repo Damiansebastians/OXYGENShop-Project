@@ -16,6 +16,7 @@
     top: 0px;
     background-color: white;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    z-index: 5;
   }
   .header .header-text {
     font-family: "raleway", sans-serif;
@@ -112,5 +113,53 @@
     border: 1px solid #E8E9ED;
     margin: 42px 30px 0;
     border-radius: 5px;
+    position: relative;
+  }
+  .article-first .first-img-1 {
+    position: absolute;
+    top: 37px;
+    right: 66px;
+    z-index: 1;
+  }
+  .article-first .first-img-2 {
+    position: absolute;
+    top: 15px;
+    right: 65px;
+    border-radius: 41px;
+  }
+  .article-first .first-img-3 {
+    position: absolute;
+    top: 19px;
+    right: 50px;
+    z-index: 1;
+  }
+  .article-first .first-img-4 {
+    position: absolute;
+    top: 15px;
+    right: 93px;
+  }
+  .article-first h4 {
+    height: 72px;
+    width: 80%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 174px 94px 10px 22px;
+  }
+  .article-first p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 21px 30px;
+  }
+  .article-first .brand-title {
+    margin: 31px 20px 20px;
+  }
+  .article-first .brand-text {
+    margin: 0px 20px 24px;
   }
 }/*# sourceMappingURL=style.css.map */
