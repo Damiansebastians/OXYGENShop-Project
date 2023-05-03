@@ -32,6 +32,9 @@
                     display: inline-block;
                     margin: 16px 25px;
                 }
+            }
+
+                // MENU MOBILE
 
                 .header-button{
                     position: absolute;
@@ -39,45 +42,57 @@
                     top: 30px;
                     cursor: pointer;
                 }
-// MENU MOBILE
+
                 .menu-items {
                     display: none;
+
+                    & a{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 15px;
+                        text-align: center;
+                        letter-spacing: 3.28px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: #A5A5A5;
+
+                        &:hover {
+                            color: #000000;
+                            font-weight: bold;
+                    }
+                }
+
+                    & li{
+                        padding: 14px 0px 0px 25px;
+                    }
                 }
                 
-                .menu input[type="checkbox"] {
+                input[type="checkbox"] {
                     display: none;
                 }
                 
-                .menu label.header-button {
-                    display: block;
-                    width: 30px;
-                    height: 30px;
-                    background: #fff;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
+                    input[type="checkbox"]:checked + .header-button img {
+                        display: none;
+                    }
+                    
+                    input[type="checkbox"]:checked + .header-button::before {
+                        content:"X";
+                    }
                 
-                .menu label.header-button::after {
-                    content: "";
-                    display: block;
-                    width: 16px;
-                    height: 2px;
-                    margin: 6px auto;
-                    background: #000;
-                }
-                
-                .menu input[type="checkbox"]:checked ~ .menu-items {
+                input[type="checkbox"]:checked ~ .menu-items {
                     display: block;
                     position: absolute;
+                    height: 163px;
                     top: 60px;
                     left: 0;
                     width: 100%;
-                    background: #fff;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    border-bottom: 1px solid #ccc;
+                    margin-top: 10px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+                    list-style-type: none;
                 }
-            }
 
 // MAIN
 
