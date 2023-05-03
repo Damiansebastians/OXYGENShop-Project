@@ -197,4 +197,80 @@
     width: 90%;
     max-width: 350px;
   }
+  .price {
+    position: relative;
+  }
+  .price h3 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .price .price-basic {
+    position: relative;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    margin: 0px 11% 54px;
+    display: table;
+    width: 75%;
+    padding: 25px 0;
+  }
+  .price .price-basic div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .price .price-basic .basic-number {
+    text-align: center;
+  }
+  .price .price-basic .basic-number h5 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #13253B;
+  }
+  .price .price-basic .basic-number p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    color: #FB3B64;
+  }
+  .price .price-basic .basic-text {
+    text-align: left;
+  }
+  .price .price-basic .basic-text li {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .price .basic-button {
+    position: absolute;
+    bottom: -25px;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    background: #EB476E;
+    border: 1px solid #FB3B64;
+    border-radius: 23px;
+    cursor: pointer;
+  }
+  .price .basic-button p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=style.css.map */

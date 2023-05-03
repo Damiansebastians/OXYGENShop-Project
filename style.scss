@@ -225,13 +225,99 @@
                         background-color:  #55DFB4;
                         border-radius: 5px;
 
-
                         .first-img-6{
                             margin-top: 25px;
                             width: 90%;
                             max-width: 350px;
                         }
                     }
+                
+                .price{
+                    position: relative;
+
+                    & h3{
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 42px;
+                        text-align: center;
+                        margin-bottom: 14px;
+                    }
+                    .price-basic{
+                        position: relative;
+                        border: 1px solid #FB3B64;
+                        border-radius: 18px;
+                        margin: 0px 11% 54px;
+                        display: table;
+                        width: 75%;
+                        padding: 25px 0;
+                        
+
+                        & div{
+                            display: table-cell;
+                            vertical-align: middle;
+                            width: 50%;
+                        }
+
+                        .basic-number{
+                            text-align: center;
+
+                            & h5{
+                                font-family: 'Raleway';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #13253B;
+                            }
+
+                            & p{
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 46px;
+                                line-height: 64px;
+                                color: #FB3B64;
+                            }
+                        }
+
+                        .basic-text{
+                            text-align: left;
+
+                            & li{
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19px;
+                                list-style-type: none;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                        .basic-button{
+                            position: absolute;
+                            bottom: -25px;
+                            left:25%;
+                            width: 50%;
+                            height: 50px;
+                            background: #EB476E;
+                            border: 1px solid #FB3B64;
+                            border-radius: 23px;
+                            cursor: pointer;
+
+                            & p{
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 18px;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                }
                     
             }  
 
