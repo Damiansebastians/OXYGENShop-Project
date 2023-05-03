@@ -12,8 +12,8 @@
         <div class="header">
             <p class="header-text">OXYGENShop</p>
             <nav class="menu">
-                <input type="checkbox"/>
-                <label class="header-button">TRES RAYITAS</label>
+                <label for="menu-toggle" class="header-button">TRES RAYITAS</label>
+                <input type="checkbox" id="menu-toggle">
                     <ul class="menu-items">
                         <li><a href="#">WHY US</a></li>
                         <li><a href="#">BENEFITS</a></li>
@@ -130,6 +130,23 @@
                     </button>
                 </div>
         </section>
+        <aside class="form">
+            <form action="#" method="post">
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <p class="contact"><img src="./img/mail.png">info@bestshop.xyz</p>
+                <p class="contact"><img src="./img/phone.png">123 456 789</p>
+                <label for="name">NAME</label><br>
+                    <input type="text" id="name" name="name" size="50%" required><br>
+                <label for="email">EMAIL</label><br>
+                    <input type="email" id="email" name="email" size="50%"  required><br>
+                <div class="protect">
+                    <input type="checkbox" id="consent" name="consent" class="check-protect" required>
+                    <p class="text-protect">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </aside>
     </main>
 </body>
 </html>

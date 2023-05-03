@@ -34,6 +34,39 @@
     top: 30px;
     cursor: pointer;
   }
+  .header .menu-items {
+    display: none;
+  }
+  .header .menu input[type=checkbox] {
+    display: none;
+  }
+  .header .menu label.header-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .header .menu label.header-button::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 6px auto;
+    background: #000;
+  }
+  .header .menu input[type=checkbox]:checked ~ .menu-items {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+  }
   .title {
     margin-top: 170px;
     text-align: center;
@@ -439,5 +472,74 @@
     font-size: 13px;
     line-height: 18px;
     color: #FFFFFF;
+  }
+  .form {
+    position: relative;
+    margin-left: 10%;
+  }
+  .form h2 {
+    margin: 50px 0px 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .form p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 38px;
+  }
+  .form .contact {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
+    margin-bottom: 17px;
+  }
+  .form .contact img {
+    margin-right: 11px;
+  }
+  .form label {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    margin-bottom: 42px;
+  }
+  .form input {
+    margin: 42px 0px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+  }
+  .form .protect {
+    position: relative;
+    display: table;
+    width: 85%;
+  }
+  .form .check-protect {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .form .text-protect {
+    height: 144px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #707070;
+    display: table-cell;
+    vertical-align: middle;
+    width: 95%;
   }
 }/*# sourceMappingURL=style.css.map */
