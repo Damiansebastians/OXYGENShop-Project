@@ -551,7 +551,7 @@
 
             .form{
                 position: relative;
-                margin-left: 10%;
+                margin-left: 8%;
                 
                 h2{
                     margin: 50px 0px 5px;
@@ -626,15 +626,71 @@
                         width: 95%;
                         
                     }
+                #button-send{
+                    height: 57px;
+                    width:60%;
+                    background: #08A6E4;
+                    color: #FFFFFF;
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 18px;
+                    border: 1px solid #08A6E4;
+                    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+                    border-radius: 35px;
+                    margin: 33px 0px 0px 31% ;
+                    cursor: pointer;
+                    }
+                    
                 }
-            
+// FOOTER
+
+        footer{
+            position: relative;
+            width: 100%;
+            height: 89px;
+            left: 0px;
+            bottom: 0px;
+            margin-top: 44px;
+            background: #F7F7F7;
+            box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+
+            .footer-text{
+                font-family: "raleway", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 30px;
+                color: #08a6e4;
+                display: inline-block;
+                margin: 22px 0px 0px 5%;
+            }
+
+            .footer-copyright{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+                color: #A5A5A5;
+                margin-left: 5%;
+            }
+
+            .social{
+                position: absolute;
+                top: 33px;
+                right:30px;
+
+                & img {
+                    margin: 0px 5px 0px;
+                    cursor: pointer;
+                }
+            }
 
 
+        }
 
 }  
-                
-
-                
-
 
 
