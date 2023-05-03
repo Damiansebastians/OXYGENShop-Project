@@ -37,7 +37,9 @@
                     position: absolute;
                     right: 30px;
                     top: 30px;
+                    cursor: pointer;
                 }
+
             }
 
 // MAIN
@@ -272,7 +274,7 @@
                                 color: #13253B;
                             }
 
-                            & p{
+                            .cost{
                                 font-family: 'Open Sans';
                                 font-style: normal;
                                 font-weight: 300;
@@ -280,12 +282,21 @@
                                 line-height: 64px;
                                 color: #FB3B64;
                             }
+
+                            .offer{
+                                    font-family: 'Raleway';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    color: #13253B;
+                                }
                         }
 
                         .basic-text{
                             text-align: left;
 
-                            & li{
+                                li{
                                 font-family: 'Open Sans';
                                 font-style: normal;
                                 font-weight: 400;
@@ -293,7 +304,12 @@
                                 line-height: 19px;
                                 list-style-type: none;
                                 margin-bottom: 20px;
-                            }
+                                } 
+
+                                & img{
+                                    width: 14px;
+                                    margin-right: 10px;
+                                }
                         }
                     }
                         .basic-button{
@@ -315,13 +331,191 @@
                                 line-height: 18px;
                                 color: #FFFFFF;
                             }
-                        }
+                        }                     
 
+                        .price-professional{
+                            position: relative;
+                            border: 1px solid #07ACE6;
+                            border-radius: 18px;
+                            box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                            margin: 0px 5% 54px;
+                            display: table;
+                            width: 87%;
+                            padding: 50px 0;
+                            
+        
+                            & div{
+                                display: table-cell;
+                                vertical-align: middle;
+                                width: 50%;
+                            }
+        
+                            .professional-number{
+                                text-align: center;
+        
+                                & h5{
+                                    font-family: 'Raleway';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    color: #13253B;
+                                }
+        
+                                .cost{
+                                    font-family: 'Open Sans';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 46px;
+                                    line-height: 64px;
+                                    color: #07ACE6;
+                                }
+        
+                                .offer{
+                                        font-family: 'Raleway';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: #13253B;
+                                    }
+                            }
+        
+                            .professional-text{
+                                text-align: left;
+        
+                                    li{
+                                    font-family: 'Open Sans';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    list-style-type: none;
+                                    margin-bottom: 20px;
+                                    } 
+        
+                                    & img{
+                                        width: 14px;
+                                        margin-right: 10px;
+                                    }
+                            }
+                        
+                        .professional-button{
+                            position: absolute;
+                            bottom: -25px;
+                            left:25%;
+                            width: 50%;
+                            height: 50px;
+                            background: #07ACE6;
+                            border: 1px solid #07ACE6;
+                            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+                            border-radius: 23px;
+                            cursor: pointer;
+        
+                            & p{
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 18px;
+                                color: #FFFFFF;
+                    }
                 }
+            }
+
+            .price-premium{
+                position: relative;
+                border: 1px solid #55DFB4;
+                border-radius: 18px;
+                margin: 0px 11% 54px;
+                display: table;
+                width: 75%;
+                padding: 25px 0;
+                
+
+                & div{
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 50%;
+                }
+
+                .premium-number{
+                    text-align: center;
+
+                    & h5{
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #13253B;
+                    }
+
+                    .cost{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 46px;
+                        line-height: 64px;
+                        color: #55DFB4;
+                    }
+
+                    .offer{
+                            font-family: 'Raleway';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #13253B;
+                        }
+                }
+
+                .premium-text{
+                    text-align: left;
+
+                        li{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        list-style-type: none;
+                        margin-bottom: 20px;
+                        } 
+
+                        & img{
+                            width: 14px;
+                            margin-right: 10px;
+                        }
+                }
+            
+            .premium-button{
+                position: absolute;
+                bottom: -25px;
+                left:25%;
+                width: 50%;
+                height: 50px;
+                background: #55DFB4;
+                border: 1px solid #55DFB4;
+                border-radius: 23px;
+                cursor: pointer;
+
+                & p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+        }
+    }
+}
+                    }
                     
-            }  
+                }  
+                
 
-
+                
 
 
 

@@ -11,23 +11,19 @@
     <header>
         <div class="header">
             <p class="header-text">OXYGENShop</p>
-            <button class="header-button">Menu</button>
+            <nav class="menu">
+                <input type="checkbox"/>
+                <label class="header-button">TRES RAYITAS</label>
+                    <ul class="menu-items">
+                        <li><a href="#">WHY US</a></li>
+                        <li><a href="#">BENEFITS</a></li>
+                        <li><a href="#">PRICES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <nav class="menu">
-            <input type="checkbox" id="toggle" />
-            <label class="menu-btn" for="toggle">
-                <span class="lines"></span>
-            </label>
-            <ul class="menu-items">
-                <li><a href="#">WHY US</a></li>
-                <li><a href="#">BENEFITS</a></li>
-                <li><a href="#">PRICES</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-
         <div class="title">
             <p class="title-primary">Sell More!</p>
             <p class="title-secondary">Open shop on our platform and increase your sales</p>
@@ -80,18 +76,56 @@
                 <div class="price-basic">
                     <div class="basic-number">
                         <h5>Basic</h5>
-                        <p>$0</p>
+                        <p class="cost">$60</p>
                     </div>
                     <div class="basic-text">
                         <ul>
-                            <li>100 MB HDD</li>
-                            <li>1 Subdomain</li>
-                            <li>2 E-mails</li>
-                            <li>Two years license</li>
-                            <li>Full support</li>
+                            <li><img src="./img/check.png">100 MB HDD</li>
+                            <li><img src="./img/check.png">1 Subdomain</li>
+                            <li><img src="./img/check.png">2 E-mails</li>
+                            <li><img src="./img/cancel.png">Two years license</li>
+                            <li><img src="./img/cancel.png">Full support</li>
                         </ul>
                     </div>
                     <button class="basic-button">
+                        <p>Begin</p>
+                    </button>
+                </div>
+                <div class="price-professional">
+                    <div class="professional-number">
+                        <h5>Professional</h5>
+                        <p class="cost">$25</p>
+                        <p class="offer">limited offer</p>
+                    </div>
+                    <div class="professional-text">
+                        <ul>
+                            <li><img src="./img/check.png">500 MB HDD</li>
+                            <li><img src="./img/check.png">2 Subdomain</li>
+                            <li><img src="./img/check.png">5 E-mails</li>
+                            <li><img src="./img/check.png">One years license</li>
+                            <li><img src="./img/cancel.png">Full support</li>
+                        </ul>
+                    </div>
+                    <button class="professional-button">
+                        <p>Begin</p>
+                    </button>
+                </div>
+                <div class="price-premium">
+                    <div class="premium-number">
+                        <h5>Premium</h5>
+                        <p class="cost">$60</p>
+                        <p class="offer">limited offer</p>
+                    </div>
+                    <div class="premium-text">
+                        <ul>
+                            <li><img src="./img/check.png">1 GB HDD</li>
+                            <li><img src="./img/check.png">5 Subdomains</li>
+                            <li><img src="./img/check.png">20 E-mails</li>
+                            <li><img src="./img/check.png">Two years license</li>
+                            <li><img src="./img/check.png">Full support</li>
+                        </ul>
+                    </div>
+                    <button class="premium-button">
                         <p>Begin</p>
                     </button>
                 </div>

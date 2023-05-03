@@ -32,6 +32,7 @@
     position: absolute;
     right: 30px;
     top: 30px;
+    cursor: pointer;
   }
   .title {
     margin-top: 170px;
@@ -234,13 +235,21 @@
     line-height: 24px;
     color: #13253B;
   }
-  .price .price-basic .basic-number p {
+  .price .price-basic .basic-number .cost {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     font-size: 46px;
     line-height: 64px;
     color: #FB3B64;
+  }
+  .price .price-basic .basic-number .offer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #13253B;
   }
   .price .price-basic .basic-text {
     text-align: left;
@@ -254,6 +263,10 @@
     list-style-type: none;
     margin-bottom: 20px;
   }
+  .price .price-basic .basic-text img {
+    width: 14px;
+    margin-right: 10px;
+  }
   .price .basic-button {
     position: absolute;
     bottom: -25px;
@@ -266,6 +279,160 @@
     cursor: pointer;
   }
   .price .basic-button p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  .price .price-professional {
+    position: relative;
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+    margin: 0px 5% 54px;
+    display: table;
+    width: 87%;
+    padding: 50px 0;
+  }
+  .price .price-professional div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .price .price-professional .professional-number {
+    text-align: center;
+  }
+  .price .price-professional .professional-number h5 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #13253B;
+  }
+  .price .price-professional .professional-number .cost {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    color: #07ACE6;
+  }
+  .price .price-professional .professional-number .offer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #13253B;
+  }
+  .price .price-professional .professional-text {
+    text-align: left;
+  }
+  .price .price-professional .professional-text li {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .price .price-professional .professional-text img {
+    width: 14px;
+    margin-right: 10px;
+  }
+  .price .price-professional .professional-button {
+    position: absolute;
+    bottom: -25px;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    background: #07ACE6;
+    border: 1px solid #07ACE6;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    border-radius: 23px;
+    cursor: pointer;
+  }
+  .price .price-professional .professional-button p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  .price .price-premium {
+    position: relative;
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+    margin: 0px 11% 54px;
+    display: table;
+    width: 75%;
+    padding: 25px 0;
+  }
+  .price .price-premium div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .price .price-premium .premium-number {
+    text-align: center;
+  }
+  .price .price-premium .premium-number h5 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #13253B;
+  }
+  .price .price-premium .premium-number .cost {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    color: #55DFB4;
+  }
+  .price .price-premium .premium-number .offer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #13253B;
+  }
+  .price .price-premium .premium-text {
+    text-align: left;
+  }
+  .price .price-premium .premium-text li {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .price .price-premium .premium-text img {
+    width: 14px;
+    margin-right: 10px;
+  }
+  .price .price-premium .premium-button {
+    position: absolute;
+    bottom: -25px;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    background: #55DFB4;
+    border: 1px solid #55DFB4;
+    border-radius: 23px;
+    cursor: pointer;
+  }
+  .price .price-premium .premium-button p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
