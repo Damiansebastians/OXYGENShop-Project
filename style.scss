@@ -36,12 +36,33 @@
 
                 // MENU MOBILE
 
+// ------------------BUTTON--------------------
+
                 .header-button{
                     position: absolute;
                     right: 30px;
                     top: 30px;
                     cursor: pointer;
+
+                    & img:nth-child(2){
+                        display: none;
+                    }
                 }
+
+                .menu input[type="checkbox"] {
+                    display: none;
+                }
+
+                .menu input[type="checkbox"]:checked + .header-button img:nth-child(1) {
+                    display: none;
+                }
+
+                .menu input[type="checkbox"]:checked + .header-button img:nth-child(2) {
+                    display: block;
+                }
+
+
+// ----------------MENU ITEMS------------------------
 
                 .menu-items {
                     display: none;
@@ -68,18 +89,6 @@
                         padding: 14px 0px 0px 25px;
                     }
                 }
-                
-                input[type="checkbox"] {
-                    display: none;
-                }
-                
-                    input[type="checkbox"]:checked + .header-button img {
-                        display: none;
-                    }
-                    
-                    input[type="checkbox"]:checked + .header-button::before {
-                        content:"X";
-                    }
                 
                 input[type="checkbox"]:checked ~ .menu-items {
                     display: block;
@@ -326,7 +335,9 @@
                             max-width: 350px;
                         }
                     }
-                
+
+// ------------------------PRICES------------------------
+
                 .price{
                     position: relative;
 
@@ -605,11 +616,13 @@
     }
 }
 
+// -------------------------FORM-----------------------------
+
             .form{
                 position: relative;
                 margin-left: 8%;
                 
-                h2{
+                & h2{
                     margin: 50px 0px 5px;
                     font-family: 'Raleway';
                     font-style: normal;
@@ -618,7 +631,7 @@
                     line-height: 47px;
                 }
 
-                p{
+                & p{
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
@@ -697,10 +710,10 @@
                     border-radius: 35px;
                     margin: 33px 0px 0px 31% ;
                     cursor: pointer;
-                    }
-                    
                 }
-// FOOTER
+            }
+
+//-----------------FOOTER-----------------------------
 
         footer{
             position: relative;
@@ -712,26 +725,24 @@
             background: #F7F7F7;
             box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
 
-            .footer-text{
-                font-family: "raleway", sans-serif;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 26px;
-                line-height: 30px;
-                color: #08a6e4;
-                display: inline-block;
-                margin: 22px 0px 0px 5%;
-            }
+                p:nth-child(1){
+                    font-family: "raleway", sans-serif;
+                    font-weight: 300;
+                    font-size: 26px;
+                    line-height: 30px;
+                    color: #08A6E4;
+                    display: inline-block;
+                    margin: 22px 0px 0px 5%;
+                }
 
-            .footer-copyright{
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 15px;
-                color: #A5A5A5;
-                margin-left: 5%;
-            }
+                p:nth-child(2){
+                    font-family: 'Open Sans';
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 15px;
+                    color: #A5A5A5;
+                    margin-left: 5%;
+                }
 
             .social{
                 position: absolute;
@@ -743,10 +754,7 @@
                     cursor: pointer;
                 }
             }
-
-
-        }
-
+    }
 }  
 
 
