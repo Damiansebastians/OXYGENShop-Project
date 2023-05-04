@@ -78,24 +78,22 @@
     list-style-type: none;
   }
   .title {
-    margin-top: 170px;
     text-align: center;
-    color: #000000;
-  }
-  .title .title-primary {
-    font-family: "raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
+    color: #000000;
+    margin-top: 170px;
+  }
+  .title p:nth-child(1) {
+    font-family: "raleway", sans-serif;
     font-size: 35px;
     line-height: 41px;
   }
-  .title .title-secondary {
-    margin: 20px 33px 28px;
+  .title p:nth-child(2) {
     font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 23px;
+    margin: 20px 33px 28px;
   }
   .title .title-button {
     height: 67px;
@@ -136,8 +134,7 @@
   }
   .vector .vector-number {
     font-family: "Raleway";
-    font-style: normal;
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 5.96px;
@@ -151,6 +148,33 @@
     line-height: 20px;
     color: #A5A5A5;
     margin-bottom: 25px;
+  }
+  .vector .daily-img, .vector .daily-img2, .vector .daily-img3 {
+    position: relative;
+  }
+  .vector .daily-img img:first-child,
+  .vector .daily-img2 img:first-child,
+  .vector .daily-img3 img:first-child {
+    display: block;
+    margin: 0 auto;
+  }
+  .vector .daily-img img:last-child {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 1;
+  }
+  .vector .daily-img2 img:last-child {
+    position: absolute;
+    bottom: 19%;
+    left: 47%;
+    z-index: 1;
+  }
+  .vector .daily-img3 img:last-child {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    z-index: 1;
   }
   .article-first {
     height: 370px;
