@@ -236,12 +236,18 @@
 
 // --------------------ARTICLES----------------------------
 
+                    .article{
+                        background-color: #F7F7F7;
+                        padding: 45px 0px;
+                        }
+
                     .article-first{
+                        position: relative;
                         height: 370px;
                         border: 1px solid #E8E9ED;
-                        margin: 42px 30px 0;
+                        background-color: #FFFFFF;
+                        margin: 0px 30px 42px;
                         border-radius: 5px;
-                        position: relative;
                         
                         .first-img-1{
                             position: absolute;
@@ -255,6 +261,10 @@
                             top: 15px;
                             right: 25%;
                             border-radius: 41px;
+                        }
+
+                        .first-img-line, .first-img-line1{
+                            display: none;
                         }
 
                         .first-img-3{
@@ -292,11 +302,16 @@
                     }
 
                     .article-first-text{
+                        position: relative;
                         height: 100%;
                         border: 1px solid #E8E9ED;
+                        background-color: #FFFFFF;
                         margin: 42px 30px 0;
                         border-radius: 5px;
-                        position: relative;
+
+                        .first-img-line2{
+                            display: none;
+                        }
 
                         .brand-title{
                             margin: 31px 20px 20px;
@@ -328,7 +343,7 @@
 
                     .article-trumpet{
                         position: relative;
-                        margin: 0px 30px 100px;
+                        margin: 0px 30px;
                         background-color:  #55DFB4;
                         border-radius: 5px;
 
@@ -810,9 +825,31 @@
                 .vector{
                     display: flex;
                     justify-content: space-evenly;
-                    margin-top: 103px;
+                    margin: 103px;
                 }
 
+//-----------------PRICE----------------------------
+
+            .article{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 7% 15%;
+            }
+
+            .article-first{
+
+                .first-img-line, .first-img-line1, .first-img-line2{
+                    display:block;
+                }
+            }
+
+            .article-first-text{
+
+                .first-img-line2{
+                    display: block;
+                }
+            }
 
 
 
