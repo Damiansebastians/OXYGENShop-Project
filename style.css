@@ -184,7 +184,7 @@
     background-color: #F7F7F7;
     padding: 45px 0px;
   }
-  .article-first {
+  .article .article-first {
     position: relative;
     height: 370px;
     border: 1px solid #E8E9ED;
@@ -192,33 +192,23 @@
     margin: 0px 30px 42px;
     border-radius: 5px;
   }
-  .article-first .first-img-1 {
+  .article .article-first img:nth-child(1),
+  .article .article-first img:nth-child(2),
+  .article .article-first .article-line {
+    display: none;
+  }
+  .article .article-first img:nth-child(3) {
     position: absolute;
     top: 37px;
     right: 25%;
     z-index: 1;
   }
-  .article-first .first-img-2 {
+  .article .article-first img:nth-child(4) {
     position: absolute;
     top: 15px;
     right: 25%;
-    border-radius: 41px;
   }
-  .article-first .first-img-line, .article-first .first-img-line1 {
-    display: none;
-  }
-  .article-first .first-img-3 {
-    position: absolute;
-    top: 19px;
-    right: 50px;
-    z-index: 1;
-  }
-  .article-first .first-img-4 {
-    position: absolute;
-    top: 15px;
-    right: 93px;
-  }
-  .article-first h4 {
+  .article .article-first h4 {
     height: 72px;
     width: 80%;
     font-family: "Raleway";
@@ -228,7 +218,7 @@
     line-height: 35px;
     margin: 174px 94px 10px 22px;
   }
-  .article-first p {
+  .article .article-first p {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -236,24 +226,33 @@
     line-height: 21px;
     margin: 0 21px 30px;
   }
-  .article-first-text {
+  .article .article-second {
     position: relative;
-    height: 100%;
+    height: 370px;
     border: 1px solid #E8E9ED;
     background-color: #FFFFFF;
-    margin: 42px 30px 0;
+    margin: 0px 30px 42px;
     border-radius: 5px;
   }
-  .article-first-text .first-img-line2 {
+  .article .article-second img:nth-child(1),
+  .article .article-second img:nth-child(2),
+  .article .article-second .article-line {
     display: none;
   }
-  .article-first-text .brand-title {
-    margin: 31px 20px 20px;
+  .article .article-second img:nth-child(3) {
+    position: absolute;
+    top: 24px;
+    right: 12%;
+    z-index: 1;
   }
-  .article-first-text .brand-text {
-    margin: 0px 20px 24px;
+  .article .article-second img:nth-child(4) {
+    position: absolute;
+    top: 15px;
+    right: 20%;
+    border-radius: 41px;
   }
-  .article-first-text h4 {
+  .article .article-second h4 {
+    height: 72px;
     width: 80%;
     font-family: "Raleway";
     font-style: normal;
@@ -262,22 +261,53 @@
     line-height: 35px;
     margin: 174px 94px 10px 22px;
   }
-  .article-first-text p {
+  .article .article-second p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 21px 30px;
+  }
+  .article .article-third {
+    position: relative;
+    height: 100%;
+    max-height: 314px;
+    border: 1px solid #E8E9ED;
+    background-color: #FFFFFF;
+    margin: 42px 30px 0;
+    border-radius: 5px;
+  }
+  .article .article-third img {
+    display: none;
+  }
+  .article .article-third h4 {
+    width: 80%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 31px 6% 6%;
+  }
+  .article .article-third p {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    margin: 0 21px 30px;
+    margin: 31px 6% 6%;
   }
-  .article-trumpet {
+  .article .article-trumpet {
     position: relative;
+    height: 195px;
     margin: 0px 30px;
     background-color: #55DFB4;
     border-radius: 5px;
   }
-  .article-trumpet .first-img-6 {
-    margin-top: 25px;
+  .article .article-trumpet img {
+    position: absolute;
+    top: 25px;
     width: 90%;
     max-width: 350px;
   }
@@ -682,10 +712,94 @@
     flex-wrap: wrap;
     padding: 7% 15%;
   }
-  .article-first .first-img-line, .article-first .first-img-line1, .article-first .first-img-line2 {
-    display: block;
+  .article .article-first {
+    position: relative;
+    display: grid;
+    padding: 0px 35px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    align-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
-  .article-first-text .first-img-line2 {
+  .article .article-first img:nth-child(1) {
     display: block;
+    grid-column: 2;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    z-index: 2;
+  }
+  .article .article-first img:nth-child(2) {
+    display: block;
+    grid-column: 2;
+    position: absolute;
+    top: 50px;
+    right: 2%;
+    z-index: 1;
+  }
+  .article .article-first img:nth-child(3),
+  .article .article-first img:nth-child(4) {
+    display: none;
+  }
+  .article .article-first .article-line {
+    display: block;
+    grid-column: 1;
+    width: 70%;
+  }
+  .article .article-first h4 {
+    grid-column: 1;
+    margin: 0px;
+    height: auto;
+  }
+  .article .article-first p {
+    grid-column: 1;
+    margin: 30px 0px 50px;
+    width: 70%;
+  }
+  .article .article-second {
+    position: relative;
+    display: grid;
+    padding: 0px 35px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: right;
+    align-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .article .article-second img:nth-child(1) {
+    display: block;
+    grid-column: 1;
+    position: absolute;
+    top: 30px;
+    left: -2%;
+    z-index: 2;
+  }
+  .article .article-second img:nth-child(2) {
+    display: block;
+    grid-column: 1;
+    position: absolute;
+    top: 12px;
+    left: 0%;
+    z-index: 1;
+  }
+  .article .article-second img:nth-child(3),
+  .article .article-second img:nth-child(4) {
+    display: none;
+  }
+  .article .article-second .article-line {
+    display: block;
+    grid-column: 2;
+    width: 80%;
+  }
+  .article .article-second h4 {
+    grid-column: 2;
+    margin: 0px;
+    height: auto;
+  }
+  .article .article-second p {
+    grid-column: 2;
+    margin: 30px 0px 50px;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
