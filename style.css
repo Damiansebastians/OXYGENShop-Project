@@ -679,21 +679,32 @@
   .header {
     display: flex;
     align-items: center;
+    gap: 25%;
   }
   .header .header-text {
     margin: 0px 0px 0px 136px;
   }
   .header .menu {
+    width: 100%;
     display: flex;
-    float: right;
+    align-items: center;
   }
   .header .menu-items {
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
   }
   .header .menu-items li {
-    padding: 0px 50px;
-    margin: 16px 0px 16px 136px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 2px solid white;
+  }
+  .header .menu-items li:hover {
+    border-bottom: 4px solid #08A6E4;
   }
   .header .header-button {
     display: none;
@@ -888,5 +899,41 @@
   }
   .price .price-professional .professional-text li {
     margin-bottom: 25px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    margin: 131px 0px 116px;
+  }
+  .form h2 {
+    margin: 0px 0px 22px;
+  }
+  .form p {
+    margin-bottom: 42px;
+  }
+  .form input {
+    width: 100%;
+  }
+  .form .protect {
+    width: 100%;
+  }
+  .form .text-protect {
+    height: 108px;
+  }
+  .form .content-contact {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  .form #button-send {
+    grid-column: 2;
+    margin: 20px 0px 0px;
+    justify-self: right;
+  }
+  form {
+    max-width: 800px;
+    height: 376px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

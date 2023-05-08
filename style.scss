@@ -826,25 +826,35 @@
             .header{
                 display: flex;
                 align-items: center;
-
+                gap: 25%;
 
             .header-text{
                 margin: 0px 0px 0px 136px;
-            
             }
 
             .menu{
+                width: 100%;
                 display: flex;
-                float: right;
+                align-items: center;
             }
-
-                .menu-items {
+            
+            .menu-items{
+                    height: 100%;
+                    width: 100%;
                     display: flex;
+                    justify-content: space-evenly;
                     list-style: none;
 
                     & li{
-                        padding: 0px 50px;
-                        margin: 16px 0px 16px 136px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0px;
+                        border-bottom: 2px solid white;
+                    }
+
+                    & li:hover {
+                        border-bottom: 4px solid #08A6E4;
                     }
                 }
 
@@ -1095,6 +1105,54 @@
     }
 
 //-----------------FORM--------------------
+
+    .form{
+        display: flex;
+        justify-content: center;
+        margin: 131px 0px 116px;
+
+        & h2{
+            margin: 0px 0px 22px;
+        }
+
+        & p{
+            margin-bottom: 42px;
+        }
+
+        & input{
+            width: 100%;
+        }
+
+        .protect{
+            width: 100%;
+        }
+        
+        .text-protect{
+            height: 108px;
+        }
+
+        .content-contact{
+            display: flex;
+            align-items: center;
+            gap: 23px;
+        }
+
+        #button-send{
+            grid-column: 2;
+            margin: 20px 0px 0px;
+            justify-self: right;
+        }
+    }
+    
+        form{
+            max-width: 800px;
+            height: 376px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+// ----------FOOTER------------
 
 
 

@@ -161,18 +161,24 @@
         </section>
         <section class="form" id="form">
             <form action="#" method="post">
-                <h2>Any questions?</h2>
-                <p>Leave your email address or call us!</p>
-                <p class="contact"><img src="./img/mail.png">info@bestshop.xyz</p>
-                <p class="contact"><img src="./img/phone.png">123 456 789</p>
-                <label for="name">NAME</label><br>
-                    <input type="text" id="name" name="name" size="30%" required><br>
-                <label for="email">EMAIL</label><br>
-                    <input type="email" id="email" name="email" size="30%"  required><br>
-                <div class="protect">
-                    <input type="checkbox" id="consent" name="consent" class="check-protect" required>
-                    <p class="text-protect">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                <div>
+                    <h2>Any questions?</h2>
+                    <p>Leave your email address or call us!</p>
+                    <div class="content-contact">
+                        <p class="contact"><img src="./img/mail.png">info@bestshop.xyz</p>
+                        <p class="contact"><img src="./img/phone.png">123 456 789</p>
+                    </div>
                 </div>
+                <div>
+                    <label for="name">NAME</label><br>
+                        <input type="text" id="name" name="name" size="30%" required><br>
+                    <label for="email">EMAIL</label><br>
+                        <input type="email" id="email" name="email" size="30%"  required>
+                        <div class="protect">
+                            <input type="checkbox" id="consent" name="consent" class="check-protect" required>
+                            <p class="text-protect">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                        </div>
+                    </div>
                 <button type="submit" id="button-send">Send</button>
             </form>
         </section>
