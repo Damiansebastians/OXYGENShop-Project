@@ -1027,6 +1027,74 @@
         }
     }
 
+// --------------PRICES---------------------
+
+    .price{
+        justify-content: center;
+        margin:128px 0 0 0;
+        
+        & h3{
+            margin-bottom: 50px;
+        }
+        
+        .content-price {
+            display: flex;
+            padding: 0px 5% 0px;
+            align-items: center;
+        }
+
+        .price-basic, .price-premium{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            padding: 34px 0px 55px;
+
+            & ul{
+                margin-top: 69px;
+            }
+
+            .cost{
+                margin-top: 14px;
+            }
+
+            .basic-text, .premium-text{
+                text-align: center;
+            }
+        }
+
+        .price-professional{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 5% 0px;
+            padding: 0px;
+
+            & h5{
+                margin: 34px 0px 14px;
+            }
+
+            .cost{
+                margin-bottom: 5px;
+            }
+
+            .offer{
+                margin-bottom: 61px;
+            }
+
+            .professional-text{
+                margin-bottom: 53px;
+                text-align: center;
+
+                    & li{
+                        margin-bottom: 25px;
+                    }
+            }
+        }
+    }
+
+//-----------------FORM--------------------
 
 
 

@@ -837,4 +837,56 @@
   .article .article-trumpet img {
     top: 75px;
   }
+  .price {
+    justify-content: center;
+    margin: 128px 0 0 0;
+  }
+  .price h3 {
+    margin-bottom: 50px;
+  }
+  .price .content-price {
+    display: flex;
+    padding: 0px 5% 0px;
+    align-items: center;
+  }
+  .price .price-basic, .price .price-premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 34px 0px 55px;
+  }
+  .price .price-basic ul, .price .price-premium ul {
+    margin-top: 69px;
+  }
+  .price .price-basic .cost, .price .price-premium .cost {
+    margin-top: 14px;
+  }
+  .price .price-basic .basic-text, .price .price-basic .premium-text, .price .price-premium .basic-text, .price .price-premium .premium-text {
+    text-align: center;
+  }
+  .price .price-professional {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5% 0px;
+    padding: 0px;
+  }
+  .price .price-professional h5 {
+    margin: 34px 0px 14px;
+  }
+  .price .price-professional .cost {
+    margin-bottom: 5px;
+  }
+  .price .price-professional .offer {
+    margin-bottom: 61px;
+  }
+  .price .price-professional .professional-text {
+    margin-bottom: 53px;
+    text-align: center;
+  }
+  .price .price-professional .professional-text li {
+    margin-bottom: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
