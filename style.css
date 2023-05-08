@@ -313,6 +313,7 @@
   }
   .price {
     position: relative;
+    margin: 53px 0px 0px 0px;
   }
   .price h3 {
     font-family: "Raleway";
@@ -850,7 +851,7 @@
   }
   .price {
     justify-content: center;
-    margin: 128px 0 0 0;
+    margin: 128px 0px 0px 0px;
   }
   .price h3 {
     margin-bottom: 50px;
