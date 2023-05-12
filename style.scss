@@ -448,12 +448,7 @@
                             }
 
                             .offer{
-                                    font-family: 'Raleway';
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 12px;
-                                    line-height: 14px;
-                                    color: #13253B;
+                                    visibility: hidden;
                                 }
                         }
 
@@ -501,11 +496,11 @@
                             position: relative;
                             border: 1px solid #07ACE6;
                             border-radius: 18px;
-                            box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                            margin: 0px 5% 54px;
+                            //box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                            margin: 0px 11% 54px;
                             display: table;
-                            width: 87%;
-                            padding: 50px 0;
+                            width: 75%;
+                            padding: 25px 0;
                             
         
                             & div{
@@ -572,7 +567,7 @@
                             height: 50px;
                             background: #07ACE6;
                             border: 1px solid #07ACE6;
-                            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+                            //box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
                             border-radius: 23px;
                             cursor: pointer;
         
@@ -729,6 +724,10 @@
                         margin: 42px 0px;
                         border:none;
                         border-bottom:1px solid #95989A;
+                    }
+                    input:focus{
+                        outline: none;
+                        background-color: #08A6E4;
                     }
 
                 .protect{
@@ -1048,16 +1047,17 @@
         
         .content-price {
             display: flex;
-            padding: 0px 5% 0px;
+            padding: 0px 8% 0px;
             align-items: center;
         }
 
-        .price-basic, .price-premium{
+        .price-basic, .price-premium, .price-professional{
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0px;
             padding: 34px 0px 55px;
+
 
             & ul{
                 margin-top: 69px;
@@ -1067,40 +1067,27 @@
                 margin-top: 14px;
             }
 
-            .basic-text, .premium-text{
+            .basic-text, .premium-text, .professional-text{
                 text-align: center;
             }
         }
 
         .price-professional{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0px 5% 0px;
-            padding: 0px;
-
-            & h5{
-                margin: 34px 0px 14px;
+            margin: 0px 8% 0px;
             }
 
-            .cost{
-                margin-bottom: 5px;
+            .price-basic:hover{
+                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                transform: scale(1.1);
+            } 
+            .price-premium:hover{
+                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                transform: scale(1.1);
             }
-
-            .offer{
-                margin-bottom: 61px;
+            .price-professional:hover{
+                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                transform: scale(1.1);
             }
-
-            .professional-text{
-                margin-bottom: 53px;
-                text-align: center;
-
-                & li{
-                    margin-bottom: 25px;
-                }
-            }
-        }
     }
 
 //-----------------FORM--------------------
