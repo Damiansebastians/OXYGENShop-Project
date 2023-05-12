@@ -667,9 +667,21 @@
                     line-height: 18px;
                     color: #FFFFFF;
             }
-        }
+            }
+                }
+                .price-basic:hover{
+                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                    transform: scale(1.1);
+                } 
+                .price-premium:hover{
+                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                    transform: scale(1.1);
+                }
+                .price-professional:hover{
+                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                    transform: scale(1.1);
+                }
     }
-}
 
 // -------------------------FORM-----------------------------
 
@@ -1074,19 +1086,6 @@
 
         .price-professional{
             margin: 0px 8% 0px;
-            }
-
-            .price-basic:hover{
-                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                transform: scale(1.1);
-            } 
-            .price-premium:hover{
-                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                transform: scale(1.1);
-            }
-            .price-professional:hover{
-                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                transform: scale(1.1);
             }
     }
 
