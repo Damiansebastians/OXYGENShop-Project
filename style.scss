@@ -496,7 +496,6 @@
                             position: relative;
                             border: 1px solid #07ACE6;
                             border-radius: 18px;
-                            //box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
                             margin: 0px 11% 54px;
                             display: table;
                             width: 75%;
@@ -567,7 +566,6 @@
                             height: 50px;
                             background: #07ACE6;
                             border: 1px solid #07ACE6;
-                            //box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
                             border-radius: 23px;
                             cursor: pointer;
         
@@ -670,16 +668,24 @@
             }
                 }
                 .price-basic:hover{
-                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                    transform: scale(1.1);
+                    box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.90);
+                    transform: scale(1.15);
+                    transition: transform 0.3s ease-in-out;
+                    border-width: 2px;
                 } 
+
                 .price-premium:hover{
-                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                    transform: scale(1.1);
+                    box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.90);
+                    transform: scale(1.15);
+                    transition: transform 0.3s ease-in-out;
+                    border-width: 2px;
+    
                 }
                 .price-professional:hover{
-                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-                    transform: scale(1.1);
+                    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.90);
+                    transform: scale(1.15);
+                    transition: transform 0.3s ease-in-out;
+                    border-width: 2px;
                 }
     }
 

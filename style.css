@@ -548,16 +548,22 @@
     color: #FFFFFF;
   }
   .price .price-basic:hover {
-    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-    transform: scale(1.1);
+    box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
   }
   .price .price-premium:hover {
-    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-    transform: scale(1.1);
+    box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
   }
   .price .price-professional:hover {
-    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-    transform: scale(1.1);
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
   }
   .form {
     position: relative;
