@@ -51,7 +51,7 @@
 
 // ----------------MENU ITEMS------------------------
 
-                #menu-items{
+                .menu-items{
                     display: none;
                     position: absolute;
                     height: 163px;
@@ -82,6 +82,7 @@
                     & li{
                         padding: 14px 0px 0px 25px;
                     }
+
                 }
 
 // MAIN
@@ -821,31 +822,10 @@
 
 // -----------------HEADER----------------------
 
-        #menu-items{
-                display: block;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                list-style: none;
-
-                & li{
-                    height: 70px;
-                    display: flex;
-                    align-items: center;
-                    padding: 0px;
-                    border-bottom: 2px solid white;
-                }
-
-                & li:hover {
-                    border-bottom: 4px solid #08A6E4;
-                }
-            }
-
             .header{
                 display: flex;
                 align-items: center;
-                gap: 25%;
+                gap: 15%;
 
             .header-text{
                 margin: 0px 0px 0px 136px;
@@ -857,6 +837,29 @@
                 align-items: center;
             }
             
+            .menu-items{
+                    position: static;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    margin-top: 0%;
+                    box-shadow: none;
+                    justify-content: space-evenly;
+                    list-style: none;
+
+                    & li{
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0px;
+                        border-bottom: 2px solid white;
+                    }
+
+                    & li:hover {
+                        border-bottom: 4px solid #08A6E4;
+                    }
+                }
+
                 .header-button{
                     display: none;
                 }

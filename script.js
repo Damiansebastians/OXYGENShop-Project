@@ -26,3 +26,12 @@ const changeImage = () => {
 
 headerButton.addEventListener("click", viewMenu);
 headerButton.addEventListener('click', changeImage);
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 999) {
+        menuItems.removeAttribute('style');
+    }
+});
+
+
+
