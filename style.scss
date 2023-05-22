@@ -13,19 +13,24 @@
         min-width: 320px;
     }
 
+// PERCENTAGE SCROLLER BAR
     .percentage{
         top: 0;
         position: fixed;
         width: 100%;
-        height: 5px;
+        height: 8px;
         z-index: 6;
     }
 
     .percentage-scroller{
-        width: 100%;
+        width: 0%;
         height: 100%;
         background-color: #07ACE6;
     }
+
+    .percentage-scroller.completed {
+            background-color: #55DFB4;
+        }
 
             .header{
                 width: 100%;
