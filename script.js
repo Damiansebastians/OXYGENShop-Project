@@ -1,4 +1,4 @@
-// Menu Mobile
+// MENU MOBILE
 
 let headerButton = document.getElementById('header-button');
 let menuItems = document.getElementById('menu-items');
@@ -32,6 +32,26 @@ window.addEventListener('resize', function() {
         menuItems.removeAttribute('style');
     }
 });
+
+//BUTTON RETURN TO THE TOP
+
+let returnTop = document.getElementById('return-top');
+
+window.addEventListener('scroll', function() {
+    returnTop.style.display = (window.scrollY > 20) ? 'block' : 'none';
+});
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+returnTop.addEventListener('click', () => {
+    setTimeout(scrollToTop, 200);
+});
+
 
 
 

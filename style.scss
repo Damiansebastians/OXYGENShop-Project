@@ -833,6 +833,28 @@
                 }
             }
     }
+
+//BUTTON RETURN TO THE TOP
+    #return-top {
+        display: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 75px;
+        right: 20px;
+        z-index: 7;
+        background-color: #08A6E4;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+        #return-top:hover {
+            background-color: #00b2f8;
+            transform: scale(1.30);
+            transition: transform 0.3s ease-in-out;
+        }
 }  
 
 // VERSION ESCRITORIO
