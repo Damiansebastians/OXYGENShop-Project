@@ -41,14 +41,17 @@ window.addEventListener('scroll', function() {
     returnTop.style.display = (window.scrollY > 20) ? 'block' : 'none';
 });
 
-returnTop.addEventListener('click', function() {
-    setTimeout(function() {
-      window.scrollTo({
+const scrollToTop = () => {
+    window.scrollTo({
         top: 0,
         behavior: 'smooth'
-      });
-    }, 200);
-  });
+    });
+}
+
+returnTop.addEventListener('click', () => {
+    setTimeout(scrollToTop, 200);
+});
+
 
 
 
