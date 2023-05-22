@@ -9,6 +9,21 @@
   body {
     min-width: 320px;
   }
+  .percentage {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 8px;
+    z-index: 6;
+  }
+  .percentage-scroller {
+    width: 0%;
+    height: 100%;
+    background-color: #07ACE6;
+  }
+  .percentage-scroller.completed {
+    background-color: #55DFB4;
+  }
   .header {
     width: 100%;
     height: 70px;
