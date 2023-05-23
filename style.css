@@ -730,17 +730,29 @@
     align-items: center;
     background-color: #c1f5e5;
     width: 85%;
-    height: 50%;
+    height: 60%;
     margin: auto;
     margin-top: 100px;
     padding: 20px;
-    border-radius: 5%;
+    border-radius: 25px;
+  }
+  .modal-content img {
+    width: 160px;
+  }
+  .modal-content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .modal-content input {
+    min-width: 200px;
+    width: 50%;
+    text-align: center;
   }
   #subscribe-btn {
-    height: 67px;
+    height: 47px;
     width: 30%;
     min-width: 200px;
-    margin-top: 150px;
+    margin-top: 20px;
     background: #08A6E4;
     border: #08A6E4;
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
@@ -754,6 +766,7 @@
     color: #FFFFFF;
   }
   .close {
+    font-weight: bolder;
     align-self: flex-end;
     cursor: pointer;
   }

@@ -47,11 +47,11 @@ window.addEventListener('scroll', showModalOnScroll);
 
     let subscribe = () => {
       //let email = emailInput.value;
-  
+
       // Validar la dirección de correo (puedes usar una expresión regular o una API)
-  
+
       // Enviar el email al servidor (puedes usar AJAX o Fetch API)
-  
+
       // Ocultar el modal y guardar la información en localStorage
       hideModal();
       localStorage.setItem('subscribed', 'true');
