@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://oxygenworkspace.com/wp-content/uploads/2020/12/cropped-OXY-32x32.jpg" sizes="32x32">
     <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
     <title>OXYGEN Shop</title>
 </head>
 <body>
@@ -184,6 +185,14 @@
                 <button type="submit" id="button-send">Send</button>
             </form>
         </section>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="close-btn">&times;</span>
+                    <p>Subscribe to our newsletter</p>
+                    <input type="email" id="email-input" placeholder="Introduce tu dirección de correo">
+                    <button id="subscribe-btn">Suscribirse</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>OXYGENShop</p>
@@ -195,5 +204,5 @@
     </footer>
     <button id="return-top">🢁</button>
 </body>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </html>
