@@ -874,8 +874,8 @@
         
         .modal-content {
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             background-color: #c1f5e5;
             width: 85%;
@@ -890,7 +890,8 @@
             }
 
             & p{
-                font-size: 20px;
+                text-align: center;
+                font-size: 30px;
                 margin-bottom: 10px;
             }
 
@@ -920,9 +921,16 @@
             }
         
         .close {
-            font-weight: bolder;
+            font-size: 30px;
+            border: none;
+            background:none;
             align-self: flex-end;
             cursor: pointer;
+        }
+        #subscriptionMessage{
+            text-align: center;
+            display: none;
+            font-size: 35px;
         }
 
 }  
