@@ -1,6 +1,6 @@
 # OXYGENShop-Project
 
-## Proyecto de finalización del Modulo de HTML & CSS
+## Proyecto de finalización del Modulo de HTML, CSS & JS
 Recursos aplicados SASS y BEM, también se estructura siguiendo un diseño WEB RESPONSIVE.
 
 DEPLOY: https://damiansebastians.github.io/OXYGENShop-Project/
