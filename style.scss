@@ -790,6 +790,9 @@
                     cursor: pointer;
                 }
             }
+            #message{
+                display: none;
+            }
 
 //-----------------FOOTER-----------------------------
 
@@ -855,6 +858,81 @@
             transform: scale(1.30);
             transition: transform 0.3s ease-in-out;
         }
+
+//POPUP - MODAL
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c1f5e5;
+            width: 85%;
+            height: 60%;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            border-radius: 25px;
+
+            & img{
+                width: 160px;
+            }
+
+            & p{
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            & input{
+                min-width: 200px;
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        #subscribe-btn{
+            height: 47px;
+            width: 30%;
+            min-width: 200px;
+            margin-top: 20px;
+            background: #08A6E4;
+            border: #08A6E4;
+            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+            border-radius: 40px;
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            }
+        
+        .close {
+            font-size: 30px;
+            border: none;
+            background:none;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+        #subscriptionMessage{
+            text-align: center;
+            display: none;
+            font-size: 35px;
+        }
+
 }  
 
 // VERSION ESCRITORIO

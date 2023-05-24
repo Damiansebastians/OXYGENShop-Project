@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://oxygenworkspace.com/wp-content/uploads/2020/12/cropped-OXY-32x32.jpg" sizes="32x32">
     <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
     <title>OXYGEN Shop</title>
 </head>
 <body>
@@ -162,7 +163,7 @@
             </div>
         </section>
         <section class="form" id="form">
-            <form action="#" method="post">
+            <form action="index.html" method="post" id="myForm">
                 <div>
                     <h2>Any questions?</h2>
                     <p>Leave your email address or call us!</p>
@@ -183,7 +184,20 @@
                     </div>
                 <button type="submit" id="button-send">Send</button>
             </form>
+            <div id="message">
+                <p>¡Thank you! The form was submitted successfully</p>
+            </div>
         </section>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <p id="subscriptionMessage">¡Success! You`re now subscribed</p>
+                <button class="close" id="close-btn">&times;</button>
+                    <p id="modal-text">Subscribe to our newsletter</p>
+                    <input type="email" id="email-input" placeholder="Enter your email">
+                    <img src="./img/MailBox.png" alt="mailboxes">
+                    <button id="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>OXYGENShop</p>
@@ -193,7 +207,7 @@
             <a href="https://www.facebook.com" target="_blank"><img src="./img/Facebook.png" width="24px" alt="Facebook logo"></a>
         </div>
     </footer>
-    <button id="return-top">&#128285;</button>
+    <button id="return-top">&#8593;</button>
 </body>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </html>
