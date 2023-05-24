@@ -657,6 +657,9 @@
     margin: 33px 0px 0px 31%;
     cursor: pointer;
   }
+  #message {
+    display: none;
+  }
   footer {
     position: relative;
     width: 100%;
