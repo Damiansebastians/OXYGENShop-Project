@@ -117,3 +117,60 @@ const sendDataToServer = async (data) => {
 });
 
 
+
+
+//CURRENCY EXCHANGE
+
+const currencySelect = document.getElementById('currency-select');
+const costBasic = document.getElementById('cost-basic');
+const costProfessional = document.getElementById('cost-professional');
+const costPremium = document.getElementById('cost-premium');
+
+const fetchExchangeRates = async () => {
+    try {
+        const response = await fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json`);
+        const data = await response.json();
+
+        const eur_eur = data.eur.eur;
+        const eur_usd = data.eur.usd;
+        const eur_gbp = data.eur.gbp;
+
+      // Mostrar los datos en la consola
+        console.log(eur_eur);
+        console.log(eur_usd);
+        console.log(eur_gbp);
+
+    } catch (error) {
+        console.error('Error fetching exchange rates:', error);
+    }
+};
+
+ //Función para actualizar los precios de los planes según la moneda seleccionada
+
+    const updatePlanPrices = async () => {
+        const selectedCurrency = currencySelect.value;
+
+    if (selectedCurrency === 'USD') {
+        costBasic.textContent = `${selectedCurrency} ${(0 * eur_usd).toFixed(2)}`;
+        costProfessional.innerHTML = `${selectedCurrency} ${(25 * eur_usd).toFixed(2)}`;
+        costPremium.innerHTML = `${selectedCurrency} ${(60 * eur_usd).toFixed(2)}`;
+        
+    } if (selectedCurrency === 'GBP') {
+        costBasic.textContent = `${selectedCurrency} ${(0 * eur_gbp).toFixed(2)}`;
+        costProfessional.innerHTML = `${selectedCurrency} ${(25 * eur_gbp).toFixed(2)}`;
+        costPremium.innerHTML = `${selectedCurrency} ${(60 * eur_gbp).toFixed(2)}`;
+
+        } else {
+            costBasic.textContent = `${selectedCurrency} ${(0 * eur_eur).toFixed(2)}`;
+            costProfessional.textContent = `${selectedCurrency} ${(25 * eur_eur).toFixed(2)}`;
+            costPremium.textContent = `${selectedCurrency} ${(60 * eur_eur).toFixed(2)}`;
+        }
+    };
+
+// Agregar evento de cambio al select de moneda
+currencySelect.addEventListener('change', updatePlanPrices);
+
+// Actualizar los precios de los planes al cargar la página
+updatePlanPrices()
+
+

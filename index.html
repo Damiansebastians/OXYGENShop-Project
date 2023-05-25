@@ -102,11 +102,19 @@
         </article>
         <section class="price" id="price">
             <h3>Pricing</h3>
+            <div id="currency-converter">
+                <h2>Currency Converter</h2>
+                <select id="currency-select">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
             <div class="content-price">
                 <div class="price-basic">
                     <div class="basic-number">
                         <h5>Basic</h5>
-                        <p class="cost">$0</p>
+                        <p class="cost" id="cost-basic">$0</p>
                         <p class="offer">limited offer</p>
                     </div>
                     <div class="basic-text">
@@ -125,7 +133,7 @@
                 <div class="price-professional">
                     <div class="professional-number">
                         <h5>Professional</h5>
-                        <p class="cost">$25</p>
+                        <p class="cost" id="cost-professional">$25</p>
                         <p class="offer">limited offer</p>
                     </div>
                     <div class="professional-text">
@@ -144,7 +152,7 @@
                 <div class="price-premium">
                     <div class="premium-number">
                         <h5>Premium</h5>
-                        <p class="cost">$60</p>
+                        <p class="cost" id="cost-premium">$60</p>
                         <p class="offer">limited offer</p>
                     </div>
                     <div class="premium-text">
