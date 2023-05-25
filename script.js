@@ -116,4 +116,54 @@ const sendDataToServer = async (data) => {
     };
 });
 
+//--------------------CURRENCY EXCHANGE---------------------------------------------
+
+const currencySelect = document.getElementById('currency-select');
+const costBasic = document.getElementById('cost-basic');
+const costProfessional = document.getElementById('cost-professional');
+const costPremium = document.getElementById('cost-premium');
+
+let eur_eur, eur_usd, eur_gbp;
+
+//OBTENEMOS LOS VALORES DE LAS MONEDAS
+const exchange = async () => {
+    try {
+        const response = await fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json`);
+        const data = await response.json();
+
+        eur_eur = data.eur.eur;
+        eur_usd = data.eur.usd;
+        eur_gbp = data.eur.gbp;
+
+        updatePlan();
+
+    } catch (error) {
+        console.error('Error fetching exchange rates:', error);
+    }
+};
+
+ //ACTUALIZAMOS PLANES
+
+    const updatePlan = async () => {
+        const selectedCurrency = currencySelect.value;
+
+    if (selectedCurrency === 'EUR') {
+        costBasic.innerHTML = `${(0 * eur_eur).toFixed(0)} ${selectedCurrency}`;
+        costProfessional.innerHTML = `${(25 * eur_eur).toFixed(0)} ${selectedCurrency}`;
+        costPremium.innerHTML = `${(60 * eur_eur).toFixed(0)} ${selectedCurrency}`;
+
+        } else if (selectedCurrency === 'USD') {
+            costBasic.innerHTML = `${(0 * eur_usd).toFixed(0)} ${selectedCurrency}`;
+            costProfessional.innerHTML = `${(25 * eur_usd).toFixed(0)} ${selectedCurrency}`;
+            costPremium.innerHTML = `${(60 * eur_usd).toFixed(0)} ${selectedCurrency}`;
+            
+            } else if (selectedCurrency === 'GBP') {
+                costBasic.innerHTML = `${(0 * eur_gbp).toFixed(0)} ${selectedCurrency}`;
+                costProfessional.innerHTML = `${(25 * eur_gbp).toFixed(0)} ${selectedCurrency}`;
+                costPremium.innerHTML = `${(60 * eur_gbp).toFixed(0)} ${selectedCurrency}`;
+            }
+};
+
+currencySelect.addEventListener('change', updatePlan);
+exchange();
 
