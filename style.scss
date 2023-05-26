@@ -717,6 +717,61 @@
                 }
     }
 
+//------------------------SLIDER-----------------------------
+
+        #slider {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 100px;
+            }
+
+        #slider img {
+            width: 80%;
+            box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+            }
+
+            #slider button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px;
+                background-color: #00b2f8;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+
+            .prev-btn {
+                left: 40px;
+            }
+            
+            .next-btn {
+                right: 40px;
+            }
+            
+            .points-container {
+                display: flex;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .points {
+                width: 20px;
+                height: 20px;
+                background-color: #999999;
+                border-radius: 50%;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            .points.active {
+                background-color: #00b2f8;
+            }
+
+
 // -------------------------FORM-----------------------------
 
             .form{
