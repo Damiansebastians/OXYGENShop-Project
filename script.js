@@ -190,47 +190,49 @@ class Slider {
     }
 
     nextSlide() {
-      this.currentSlide++;
-      if (this.currentSlide === this.totalSlides) {
-        this.currentSlide = 0;
-      }
-      this.showSlide(this.currentSlide);
-      this.updateActiveDot();
-    }
-  
-    prevSlide() {
-      this.currentSlide--;
-      if (this.currentSlide < 0) {
-        this.currentSlide = this.totalSlides - 1;
-      }
-      this.showSlide(this.currentSlide);
-      this.updateActiveDot();
-    }
-  
-    updateActiveDot() {
-      const dots = Array.from(this.slider.getElementsByClassName('points'));
-      dots.forEach((dot, i) => {
-        if (i === this.currentSlide) {
-          dot.classList.add('active');
-        } else {
-          dot.classList.remove('active');
+        this.currentSlide++;
+        if (this.currentSlide === this.totalSlides) {
+            this.currentSlide = 0;
         }
-      });
+        this.showSlide(this.currentSlide);
+        this.activePoints();
     }
-  
+
+    prevSlide() {
+        this.currentSlide--;
+        if (this.currentSlide < 0) {
+        this.currentSlide = this.totalSlides - 1;
+    }
+        this.showSlide(this.currentSlide);
+        this.activePoints();
+    }
+
+//PUNTOS
+        activePoints() {
+            const points = this.slider.querySelectorAll('.points');
+
+            points.forEach((points, i) => {
+            if (i === this.currentSlide) {
+                points.classList.add('active');
+            } else {
+            points.classList.remove('active');
+            }
+        });
+    }
+
     addEventListeners() {
-      const prevBtn = this.slider.querySelector('.prev-btn');
-      prevBtn.addEventListener('click', () => this.prevSlide());
-  
-      const nextBtn = this.slider.querySelector('.next-btn');
-      nextBtn.addEventListener('click', () => this.nextSlide());
-  
-      const dots = Array.from(this.slider.getElementsByClassName('dot'));
-      dots.forEach((dot, i) => {
+        const prevBtn = this.slider.querySelector('.prev-btn');
+        prevBtn.addEventListener('click', () => this.prevSlide());
+
+        const nextBtn = this.slider.querySelector('.next-btn');
+        nextBtn.addEventListener('click', () => this.nextSlide());
+
+        const dots = Array.from(this.slider.getElementsByClassName('dot'));
+        dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
-          this.currentSlide = i;
-          this.showSlide(this.currentSlide);
-          this.updateActiveDot();
+            this.currentSlide = i;
+            this.showSlide(this.currentSlide);
+            this.activePoints();
         });
     });
     }
