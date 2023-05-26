@@ -596,6 +596,7 @@
   }
   #slider img {
     width: 80%;
+    max-width: 1200px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
   }
   #slider button {

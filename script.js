@@ -202,14 +202,14 @@ class Slider {
         this.currentSlide--;
         if (this.currentSlide < 0) {
         this.currentSlide = this.totalSlides - 1;
-    }
+        }
         this.showSlide(this.currentSlide);
         this.activePoints();
     }
 
 //PUNTOS
         activePoints() {
-            const points = this.slider.querySelectorAll('.points');
+            const points = Array.from(this.slider.querySelectorAll('.points'));
 
             points.forEach((points, i) => {
             if (i === this.currentSlide) {
@@ -220,6 +220,7 @@ class Slider {
         });
     }
 
+//EVENTOS
     addEventListeners() {
         const prevBtn = this.slider.querySelector('.prev-btn');
         prevBtn.addEventListener('click', () => this.prevSlide());
@@ -227,9 +228,9 @@ class Slider {
         const nextBtn = this.slider.querySelector('.next-btn');
         nextBtn.addEventListener('click', () => this.nextSlide());
 
-        const dots = Array.from(this.slider.getElementsByClassName('dot'));
-        dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
+        const points = Array.from(this.slider.getElementsByClassName('points'));
+        points.forEach((point, i) => {
+        point.addEventListener('click', () => {
             this.currentSlide = i;
             this.showSlide(this.currentSlide);
             this.activePoints();

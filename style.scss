@@ -724,10 +724,11 @@
             justify-content: center;
             position: relative;
             margin-top: 100px;
-            }
-
+        }
+        
         #slider img {
             width: 80%;
+            max-width: 1200px;
             box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
             }
 
