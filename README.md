@@ -13,6 +13,9 @@ Vista previa >>>>>>
 ![Oxygen5](https://user-images.githubusercontent.com/116028887/236861953-bde82369-2537-47d6-854b-fb4a7c677eff.png)
 ![Oxygen6](https://user-images.githubusercontent.com/116028887/236861962-8e30ea0c-64dd-42ae-a15a-4be3c32066ba.png)
 ![Oxygen7](https://user-images.githubusercontent.com/116028887/236862233-33f8ec5d-d8a4-4eff-8a71-40229ecee353.png)
+Add modal 
+![modal_pic](https://github.com/Damiansebastians/OXYGENShop-Project/assets/116028887/718f5b4e-aa6a-4775-81a0-227603a64dc4)
+
 
 Versión Ordenador - Aquí se aplicó FLEX y GRID para su estilos
 
