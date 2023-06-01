@@ -120,7 +120,7 @@
   .background div {
     width: 100%;
     min-height: 267px;
-    background-image: url(./img/Background.png);
+    background-image: url(./Background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
