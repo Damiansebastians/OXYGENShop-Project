@@ -7,7 +7,7 @@ DEPLOY: https://damiansebastians.github.io/OXYGENShop-Project/
 
 Versión Mobile - Se limito la utilizacion en toda la estructura mobile de FLEX y GRID
 
-Vista previa >>>>>>
+Vista previa >>>>>
 
 ![Oxygen4](https://user-images.githubusercontent.com/116028887/236861922-fa7285b6-ae93-415a-8729-61fe969ef80e.png)
 ![Oxygen5](https://user-images.githubusercontent.com/116028887/236861953-bde82369-2537-47d6-854b-fb4a7c677eff.png)
